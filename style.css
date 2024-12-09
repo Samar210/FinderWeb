@@ -1,0 +1,1011 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600px;
+}
+
+header .headerContainer {
+    background-color: #3d7a81;
+    background-image: url(./Image/hero.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+header .headerContainer .heading1 {
+    width: 500px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .headerContainer .heading1 h1 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+header .headerContainer .input {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+header .headerContainer .input div {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+header .headerContainer .input div i{
+    padding: 10px;
+    align-content: center;
+}
+
+header .headerContainer .input div input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+}
+
+header .headerContainer .input div #Search {
+    background-color: #d85151;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+header .headerContainer .input div #Search:hover {
+    background-color: #b94343;
+}
+
+header .headerContainer .link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .headerContainer .link a {
+    text-decoration: none;
+    border: 1px solid white;
+    margin: 10px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: white;
+}
+
+header .headerContainer .link a:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    header .headerContainer {
+        background-image: none;
+        height: 150vh;
+    }
+    header .headerContainer .heading1 {
+        width: 500px;
+    }
+
+    header .headerContainer .input {
+        flex-direction: column;
+        width: 90%;
+        top: 45%;
+    }
+
+    header .headerContainer .input div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    header .headerContainer .input div input {
+        width: 100%;
+    }
+
+    header .headerContainer .input div #Search {
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    header .headerContainer .link {
+        top: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    header .headerContainer .heading1{
+        width: 80%;
+    }
+    header .headerContainer .heading1 h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    header .headerContainer .input {
+        padding: 15px;
+        width: 100%;
+    }
+
+}
+
+.araeBrowse {
+    margin-top: 70px;
+    padding-left: 50px;
+}
+
+.araeBrowse .areaContainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.araeBrowse .areaContainer div {
+    display: flex;
+    width: 23%;
+    margin: 10px;
+}
+
+.araeBrowse div h1 {
+    margin-left: 30px;
+}
+
+.araeBrowse .areaContainer i {
+    background-color: #eef1f6;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.araeBrowse .areaContainer div a {
+    align-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.araeBrowse .areaContainer div a:hover {
+    border-bottom: 1px solid black;
+}
+
+.araeBrowse .areaContainer div a::selection {
+    background-color: #e7e7e9;
+}
+
+.projectContainer {
+    display: flex;
+    margin-top: 70px;
+    padding-left: 30px;
+}
+
+.projectContainer .imgSide div {
+    width: 300px;
+    height: 450px;
+    background-color: #eef1f6;
+    border-radius: 15px;
+    position: relative;
+    margin: 30px;
+    padding: 30px 50px;
+    line-height: 35px;
+}
+
+.projectContainer .imgSide div p {
+    font-size: 15px;
+    color: rgb(151, 151, 151);
+}
+
+.projectContainer .imgSide div img {
+    position: absolute;
+    left: 40px;
+    bottom: 0px;
+}
+
+
+.projectContainer .projects {
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.projectContainer .projects .descriptionContainer {
+    margin-top: 30px;
+}
+
+.projectContainer .projects div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.projectContainer .projects div .description {
+    display: flex;
+    width: 45%;
+    margin-left: 30px;
+}
+
+.projectContainer .projects div .description img {
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.projectContainer .projects div .description div {
+    justify-content: center;
+    line-height: 25px;
+    flex-direction: column;
+}
+
+.projectContainer .projects div .description div a {
+    color: black;
+    text-decoration: none;
+}
+
+.projectContainer .projects div .description div a:hover {
+    border-bottom: 1px solid black;
+}
+
+.projectContainer .projects div .description div a,
+h4 {
+    font-weight: 300;
+}
+
+.projectContainer .projects div .description div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.projectContainer .projects div .description div div i {
+    color: #fc9231;
+    align-content: center;
+    margin-right: 5px;
+}
+
+.projectContainer .projects div .description div div span {
+    padding-left: 5px;
+    color: #6c727f;
+}
+
+.homeprojectsCont {
+    margin: 50px;
+}
+
+.homeprojectsCont h1 {
+    margin: 0px;
+    display: block;
+}
+
+.homeprojectsCont .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.homeprojectsCont .container .homeproject {
+    width: 30%;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.homeprojectsCont .container .homeproject .homeprojectImg {
+    position: relative;
+}
+
+.homeprojectsCont .container .homeproject .homeprojectImg img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.homeprojectsCont .container .homeproject .homeprojectImg h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.homeprojectsCont .container .homeproject .homeprojectdis {
+    display: flex;
+    border-top: none;
+    justify-content: space-between;
+
+}
+
+.homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon {
+    display: flex;
+    border-top: none;
+    padding: 20px;
+}
+
+.homeprojectsCont .container .homeproject .homeprojectdis button {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: none;
+    border: 1px solid #1d2735;
+    margin: 15px;
+    margin-right: 20px;
+}
+
+.homeprojectsCont .container .homeproject .homeprojectdis button:hover {
+    background-color: #1d2735;
+    color: white;
+}
+
+.homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon i {
+    color: #fc9231;
+    margin-right: 5px;
+
+}
+
+.homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon span {
+    padding-left: 5px;
+    align-content: center;
+    color: #6c727f;
+    padding-right: 10px;
+}
+
+.ExpertAdvice {
+    background-color: #f5f7fa;
+    padding: 20px;
+}
+
+.ExpertAdvice div h1 {
+    margin: 40px;
+    display: block;
+    padding-bottom: 50px;
+}
+
+.ExpertAdvice .Expertcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.ExpertAdvice .Expertcontainer .Expertdescription {
+    width: 45%;
+    display: flex;
+    gap: 20px;
+}
+
+.ExpertAdvice .Expertcontainer .Expertdescription img {
+    height: 120px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.ExpertAdvice .Expertcontainer .Expertdescription div {
+    line-height: 30px;
+    align-items: center;
+    align-content: center;
+}
+
+.ExpertAdvice .Expertcontainer .Expertdescription div h3:hover {
+    border-bottom: 1px solid black;
+
+}
+
+.ExpertAdvice .Expertcontainer .Expertdescription div .ExpertdescTxt {
+    color: #4e5562;
+}
+
+.howWork {
+    padding: 50px;
+    line-height: 35px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+}
+
+.howWork .workContainer .iconContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.howWork .workContainer .iconContainer div {
+    width: 33%;
+}
+
+.grow {
+    height: 550px;
+    margin: 0px;
+}
+
+.grow .growContainer {
+    display: flex;
+}
+
+.grow .growContainer .txtContainer {
+    width: 50%;
+    height: 550px;
+    background-color: #3d7a81;
+    position: relative;
+}
+
+.grow .growContainer .txtContainer h1 {
+    position: absolute;
+    font-size: 30px;
+    line-height: 40px;
+    color: white;
+    top: 35%;
+    left: 10%;
+}
+
+.grow .growContainer .txtContainer button {
+    position: absolute;
+    color: white;
+    padding: 13px;
+    border-radius: 8px;
+}
+
+.grow .growContainer .txtContainer .addBusiness {
+    border: none;
+    background-color: #c92d2d;
+    top: 55%;
+    left: 10%;
+}
+
+.grow .growContainer .txtContainer .addBusiness:hover {
+    background-color: #b42929;
+}
+
+.grow .growContainer .txtContainer .learnMore {
+    background-color: #3d7a81;
+    border: 1px solid white;
+    top: 55%;
+    left: 30%;
+}
+
+.grow .growContainer .txtContainer .learnMore:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+.grow .growContainer .imgContainer {
+    width: 50%;
+}
+
+.grow .growContainer .imgContainer img {
+    width: 100%;
+    height: 550px;
+}
+
+.getApp {
+    height: 350px;
+    margin: 60px;
+}
+
+.getApp .getAppContainer {
+    border-radius: 10px;
+    display: flex;
+}
+
+.getApp .getAppContainer .getApptxtCont {
+    width: 60%;
+    height: 350px;
+    background-color: #fbeeee;
+    position: relative;
+}
+
+.getApp .getAppContainer .getApptxtCont h1 {
+    position: absolute;
+    font-size: 30px;
+    line-height: 40px;
+    top: 30%;
+    left: 10%;
+}
+
+.getApp .getAppContainer .getApptxtCont p {
+    position: absolute;
+    font-size: 15px;
+    line-height: 40px;
+    top: 40%;
+    left: 10%;
+}
+
+.getApp .getAppContainer .getApptxtCont button {
+    width: 115px;
+    position: absolute;
+    color: white;
+    padding: 13px;
+    border-radius: 8px;
+}
+
+.getApp .getAppContainer .getApptxtCont .app {
+    border: none;
+    background-color: #1d2735;
+    top: 55%;
+    left: 10%;
+}
+
+.getApp .getAppContainer .getApptxtCont .app:hover {
+    background-color: #333d4c;
+}
+
+.getApp .getAppContainer .getApptxtCont .google {
+    background-color: #1d2735;
+    border: none;
+    top: 55%;
+    left: 30%;
+}
+
+.getApp .getAppContainer .getApptxtCont .google:hover {
+    background-color: #333d4c;
+}
+
+.getApp .getAppContainer .getAppimgCont {
+    width: 50%;
+}
+
+.getApp .getAppContainer .getAppimgCont img {
+    background-color: #fbeeee;
+    width: 100%;
+    height: 350px;
+}
+
+.refernces {
+    margin-bottom: 90px;
+}
+
+.refernces div h1 {
+    margin-left: 60px;
+}
+
+.refernces .referenceCont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 50px;
+}
+
+.refernces .referenceCont .disReferenceCont {
+    display: flex;
+    gap: 20px;
+    height: 150px;
+    width: 49%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.refernces .referenceCont .disReferenceCont div {
+    line-height: 35px;
+    align-items: center;
+    align-content: center;
+}
+
+.refernces .referenceCont .disReferenceCont div .iconReferenceCont {
+    display: flex;
+}
+
+.refernces .referenceCont .disReferenceCont img {
+    border-radius: 10px;
+}
+
+.refernces .referenceCont .disReferenceCont div .iconReferenceCont i {
+    color: #fc9231;
+    padding-right: 10px;
+}
+
+.refernces .referenceCont .disReferenceCont div .iconReferenceCont h4 {
+    padding-left: 20px;
+}
+
+.refernces .referenceCont .disReferenceCont div .iconReferenceCont span {
+    padding-left: 5px;
+    color: #6c727f;
+    padding-right: 10px;
+}
+
+.refernces .referenceCont .disReferenceCont div button {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: none;
+    border: 1px solid #1d2735;
+    margin-top: 15px;
+}
+
+.refernces .referenceCont .disReferenceCont div button:hover {
+    background-color: #1d2735;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .grow .growContainer .txtContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .grow .growContainer .txtContainer .learnMore {
+        top: 65%;
+        left: 10%;
+    }
+
+
+    .getApp .getAppContainer .getApptxtCont button {
+        width: 200px;
+        padding: 13px;
+        border-radius: 8px;
+    }
+
+    .getApp .getAppContainer .getApptxtCont .app {
+        top: 55%;
+        left: 10%;
+    }
+
+    .getApp .getAppContainer .getApptxtCont .google {
+        top: 70%;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .projectContainer .imgSide div img {
+        left: 5px;
+    }
+
+    .projectContainer .projects {
+        margin-left: 0px;
+    }
+
+    .projectContainer .projects div .description {
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+   .araeBrowse .areaContainer div {
+        display: flex;
+        width: 21%;
+        margin: 10px;
+    }
+
+    .araeBrowse .areaContainer i {
+        padding: 15px;
+        margin: 8px;
+    }
+
+    .projectContainer .imgSide div img {
+        left: 5px;
+    }
+
+    .projectContainer .projects {
+        margin-left: 0px;
+    }
+
+    .projectContainer .projects div .description {
+        margin-left: 0px;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectImg h2 {
+        left: 10px;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon {
+        padding: 10px;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis button {
+        padding: 5px;
+        margin: 15px;
+        margin-right: 15px;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon i {
+        margin-right: 5px;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon span {
+        padding-left: 0px;
+        padding-right: 30px;
+        align-content: center;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon h4 {
+        padding-right: 0px;
+        padding-left: 0px;
+        text-align: center;
+        width: 10px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .araeBrowse .areaContainer div {
+        width: 30%;
+        margin: 10px;
+    }
+
+    .projectContainer .imgSide div {
+        display: none;
+    }
+
+    .homeprojectsCont .container .homeproject {
+        width: 45%;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon h4 {
+        width: 100px;
+        text-align: center;
+    }
+
+    .ExpertAdvice .Expertcontainer .Expertdescription {
+        width: 90%;
+    }
+
+    .howWork .workContainer .iconContainer div {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .grow .growContainer .txtContainer .addBusiness {
+        top: 60%;
+    }
+
+    .grow .growContainer .txtContainer .learnMore {
+        top: 70%;
+    }
+
+    .refernces .referenceCont {
+        display: block;
+        margin-left: 65px;
+        margin-right: 35px;
+        margin-top: 50px;
+    }
+
+    .refernces .referenceCont .disReferenceCont {
+        width: 90%;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .araeBrowse .areaContainer div {
+        display: flex;
+        width: 45%;
+        margin: 10px;
+    }
+
+    .homeprojectsCont .container .homeproject {
+        width: 80%;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon h4 {
+        text-align: center;
+        width: 100px;
+    }
+
+    .howWork .workContainer .iconContainer div {
+        width: 45%;
+    }
+
+    .grow {
+        height: 350px;
+    }
+
+    .grow .growContainer .txtContainer {
+        width: 100%;
+        height: 350px;
+    }
+
+    .grow .growContainer .txtContainer h1 {
+        width: 100%;
+        text-align: center;
+        top: 5%;
+        left: 0%;
+    }
+
+    .grow .growContainer .txtContainer button {
+        width: 80%;
+    }
+
+    .grow .growContainer .txtContainer .addBusiness {
+        top: 45%;
+        left: 10%;
+    }
+
+    .grow .growContainer .txtContainer .learnMore {
+        top: 65%;
+        left: 10%;
+    }
+
+    .grow .growContainer .imgContainer {
+        width: 0px;
+    }
+
+    .grow .growContainer .imgContainer img {
+        display: none;
+    }
+
+    .getApp .getAppContainer .getAppimgCont {
+        display: none;
+    }
+
+    .getApp {
+        height: 350px;
+    }
+
+    .getApp .getAppContainer .getApptxtCont {
+        width: 100%;
+        height: 300px;
+    }
+
+    .getApp .getAppContainer .getApptxtCont h1 {
+        width: 100%;
+        text-align: center;
+        top: 5%;
+        left: 0%;
+    }
+
+    .getApp .getAppContainer .getApptxtCont p {
+        top: 25%;
+        left: 33%;
+        right: 33%;
+    }
+
+    .getApp .getAppContainer .getApptxtCont button {
+        width: 80%;
+    }
+
+    .getApp .getAppContainer .getApptxtCont .app {
+        top: 52%;
+        left: 10%;
+    }
+
+    .getApp .getAppContainer .getApptxtCont .google {
+        top: 72%;
+        left: 10%;
+    }
+
+    .getApp .getAppContainer .getAppimgCont {
+        width: 0px;
+    }
+
+}
+
+@media screen and (max-width: 635px) {
+    .projectContainer .projects div .description {
+        width: 100%;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon h4 {
+        text-align: center;
+        width: 100px;
+    }
+
+    .howWork .workContainer .iconContainer div {
+        width: 95%;
+    }
+
+    .refernces .referenceCont .disReferenceCont {
+        display: block;
+        height: 290px;
+    }
+
+    .refernces .referenceCont .disReferenceCont img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .refernces .referenceCont .disReferenceCont div {
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .araeBrowse .areaContainer div {
+        display: flex;
+        width: 90%;
+        margin: 10px;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectImg h2 {
+        font-size: large;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon {
+        padding: 10px;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis {
+        display: block;
+        border-top: none;
+        justify-content: space-between;
+
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis button {
+        width: 90%;
+        margin-right: 0px;
+    }
+
+    .homeprojectsCont .container .homeproject .homeprojectdis .homeprojectdisicon h4 {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .refernces .referenceCont .disReferenceCont {
+        height: 370px;
+    }
+
+    .refernces .referenceCont .disReferenceCont img {
+        height: 200px;
+    }
+
+    .refernces .referenceCont .disReferenceCont div {
+        line-height: 25px;
+    }
+
+    .refernces .referenceCont .disReferenceCont div .iconReferenceCont {
+        display: block;
+    }
+
+    .refernces .referenceCont .disReferenceCont div .iconReferenceCont i {
+        display: inline;
+    }
+
+    .refernces .referenceCont .disReferenceCont div .iconReferenceCont p {
+        display: inline;
+    }
+
+    .refernces .referenceCont .disReferenceCont div .iconReferenceCont h4 {
+        padding-left: 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 288px) {
+    .grow .growContainer .txtContainer .addBusiness {
+        top: 65%;
+    }
+
+    .grow .growContainer .txtContainer .learnMore {
+        top: 80%;
+    }
+
+    .getApp .getAppContainer .getApptxtCont p {
+        top: 30%;
+        left: 30%;
+        right: 30%;
+    }
+
+    .getApp .getAppContainer .getApptxtCont h1 {
+        left: 5%;
+        right: 5%;
+    }
+}
